@@ -5,7 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product preview</title>
 </head>
+  <style>
+  .front-img{
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid rgb(43, 43, 46);
+    box-shadow:  0px  0px 4px 0px  gray;
+    margin: 30px auto;
+    display: block;
+
+  }
+
+  .prod-contain{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+
+   cursor: pointer;
+  }
+
+  </style>
 <body>
-    
+    <img src="./img/1.jpeg" class="front-img" id="main-img"/>
+
+    <div class="prod-contain">
+        <img src="./img/1.jpeg" class="prod-img" onclick="changeImage('1.jpeg')"/>
+        <img src="./img/2.jpeg" class="prod-img" onclick="changeImage('2.jpeg')"/>
+        <img src="./img/3.jpeg" class="prod-img" onclick="changeImage('3.jpeg')"/>
+        <img src="./img/4.jpeg" class="prod-img" onclick="changeImage('4.jpeg')"/>
+        <img src="./img/5.jpeg" class="prod-img" onclick="changeImage('5.jpeg')"/>
+
+    </div>
+   
 </body>
 </html>
